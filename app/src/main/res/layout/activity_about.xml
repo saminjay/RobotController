@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfe"
+    android:padding="16dp"
+    tools:context="com.example.saminjay.robotcontroller.AboutActivity">
+
+    <TextView
+        android:id="@+id/abt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="About Developer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#bf3951" />
+
+    <ImageView
+        android:id="@+id/developer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/abt_txt"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/developer" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/developer"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textColor="#bf3951"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/abt_txt"
+        android:layout_toStartOf="@+id/abt_txt"
+        android:background="@null"
+        android:onClick="fb"
+        android:src="@drawable/facebook_70x70" />
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/instagram"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:onClick="tweet"
+        android:src="@drawable/twitter_70x70" />
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/abt_txt"
+        android:layout_toRightOf="@+id/abt_txt"
+        android:background="@null"
+        android:onClick="github"
+        android:scaleType="fitXY"
+        android:src="@drawable/github" />
+
+</RelativeLayout>

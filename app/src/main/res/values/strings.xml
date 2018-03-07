@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Robot Controller</string>
+    <string name="description">The Robot Controller application is developed by Saminjay Goel. This application allows you to control a Robot via different methods.</string>
+    <string name="title_activity_remote">Remote Control</string>
+</resources>
